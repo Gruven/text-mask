@@ -1,8 +1,8 @@
-require('babel-core/register')({plugins: ['babel-plugin-rewire']})
-
 import packageJson from '../package.json'
 import conformToMask from '../src/conformToMask'
 import {placeholderChar} from '../src/constants'
+
+require('@babel/register')({plugins: ['babel-plugin-rewire']})
 
 const createTextMaskInputElement = (isVerify()) ?
   require(`../${packageJson.main}`).createTextMaskInputElement :
@@ -22,7 +22,7 @@ describe('createTextMaskInputElement', () => {
       mask: ['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
     })
 
-    expect(maskedInputElementControl.update).to.be.a('function')
+    expect(maskedInputElementControl.update).to.to.be.a('function')
   })
 
   it('works with mask functions', () => {
@@ -112,7 +112,7 @@ describe('createTextMaskInputElement', () => {
       textMaskControl.update(123)
       expect(inputElement.value).to.equal('(123) ___-____')
 
-      //reset text mask
+      // reset text mask
       textMaskControl = createTextMaskInputElement({inputElement, mask})
 
       // now clear the value
@@ -239,7 +239,7 @@ describe('createTextMaskInputElement', () => {
       const mask = ['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
       const textMaskControl = createTextMaskInputElement()
 
-      let inputElement = {value: '2'}
+      const inputElement = {value: '2'}
 
       textMaskControl.update(inputElement.value, {inputElement, mask})
       expect(inputElement.value).to.equal('(2__) ___-____')
@@ -248,7 +248,7 @@ describe('createTextMaskInputElement', () => {
     it('can change the mask passed to the update method', () => {
       const textMaskControl = createTextMaskInputElement()
 
-      let inputElement = {value: '2'}
+      const inputElement = {value: '2'}
 
       textMaskControl.update(inputElement.value, {
         inputElement,
@@ -267,7 +267,7 @@ describe('createTextMaskInputElement', () => {
       const mask = ['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
       const textMaskControl = createTextMaskInputElement()
 
-      let inputElement = {value: '2'}
+      const inputElement = {value: '2'}
 
       textMaskControl.update(inputElement.value, {inputElement, mask, guide: true})
       expect(inputElement.value).to.equal('(2__) ___-____')
@@ -280,7 +280,7 @@ describe('createTextMaskInputElement', () => {
       const mask = ['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
       const textMaskControl = createTextMaskInputElement()
 
-      let inputElement = {value: '2'}
+      const inputElement = {value: '2'}
 
       textMaskControl.update(inputElement.value, {inputElement, mask, placeholderChar: '_'})
       expect(inputElement.value).to.equal('(2__) ___-____')
@@ -293,8 +293,8 @@ describe('createTextMaskInputElement', () => {
       const mask = ['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
       const textMaskControl = createTextMaskInputElement()
 
-      let firstInputElement = {value: '1'}
-      let secondInputElement = {value: '2'}
+      const firstInputElement = {value: '1'}
+      const secondInputElement = {value: '2'}
 
       textMaskControl.update('1', {inputElement: firstInputElement, mask})
       expect(firstInputElement.value).to.equal('(1__) ___-____')

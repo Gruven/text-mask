@@ -17,16 +17,16 @@ describe('MaskedInput', () => {
   it('does not throw when instantiated', () => {
     expect(() => ReactTestUtils.renderIntoDocument(
       <MaskedInput
-      mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
-      guide={true}/>
+        mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+        guide={true}/>
     )).not.to.throw()
   })
 
   it('renders a single input element', () => {
     const maskedInput = ReactTestUtils.renderIntoDocument(
       <MaskedInput
-      mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
-      guide={true}/>
+        mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+        guide={true}/>
     )
 
     expect(
@@ -84,10 +84,10 @@ describe('MaskedInput', () => {
     const keepCharPositions = true
     const maskedInput = ReactTestUtils.renderIntoDocument(
       <MaskedInput
-      mask={mask}
-      guide={guide}
-      placeholderChar={placeholderChar}
-      keepCharPositions={keepCharPositions}/>
+        mask={mask}
+        guide={guide}
+        placeholderChar={placeholderChar}
+        keepCharPositions={keepCharPositions}/>
     )
     const renderedDOMComponent = ReactTestUtils.findRenderedDOMComponentWithTag(maskedInput, 'input')
 
@@ -109,8 +109,8 @@ describe('MaskedInput', () => {
   it('sets textMaskInputElement and calls textMaskInputElement.update with the correct value', () => {
     const maskedInput = ReactTestUtils.renderIntoDocument(
       <MaskedInput
-      value='123'
-      mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+        value='123'
+        mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
       />
     )
 
@@ -129,8 +129,8 @@ describe('MaskedInput', () => {
   it('initializes textMaskInputElement property', () => {
     const maskedInput = ReactTestUtils.renderIntoDocument(
       <MaskedInput
-      mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
-      guide={true}/>
+        mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+        guide={true}/>
     )
     expect(typeof maskedInput.textMaskInputElement).to.equal('object')
     expect(typeof maskedInput.textMaskInputElement.state).to.equal('object')
@@ -141,9 +141,9 @@ describe('MaskedInput', () => {
   it('does not render masked characters', () => {
     const maskedInput = ReactTestUtils.renderIntoDocument(
       <MaskedInput
-      value='abc'
-      mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
-      guide={true}/>
+        value='abc'
+        mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+        guide={true}/>
     )
     const renderedDOMComponent = ReactTestUtils.findRenderedDOMComponentWithTag(maskedInput, 'input')
     expect(renderedDOMComponent.value).to.equal('')
@@ -152,8 +152,8 @@ describe('MaskedInput', () => {
   it('does not allow masked characters', () => {
     const maskedInput = ReactTestUtils.renderIntoDocument(
       <MaskedInput
-      mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
-      guide={true}/>
+        mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+        guide={true}/>
     )
     const renderedDOMComponent = ReactTestUtils.findRenderedDOMComponentWithTag(maskedInput, 'input')
 
@@ -165,8 +165,8 @@ describe('MaskedInput', () => {
   it('can be disabled by setting the mask to false', () => {
     const maskedInput = ReactTestUtils.renderIntoDocument(
       <MaskedInput
-      value='123abc'
-      mask={false}/>
+        value='123abc'
+        mask={false}/>
     )
     const renderedDOMComponent = ReactTestUtils.findRenderedDOMComponentWithTag(maskedInput, 'input')
     expect(renderedDOMComponent.value).to.equal('123abc')
@@ -175,7 +175,7 @@ describe('MaskedInput', () => {
   it('can call textMaskInputElement.update to update the inputElement.value', () => {
     const maskedInput = ReactTestUtils.renderIntoDocument(
       <MaskedInput
-      mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}/>
+        mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}/>
     )
     const renderedDOMComponent = ReactTestUtils.findRenderedDOMComponentWithTag(maskedInput, 'input')
 
@@ -189,8 +189,8 @@ describe('MaskedInput', () => {
   it('can pass value to textMaskInputElement.update method', () => {
     const maskedInput = ReactTestUtils.renderIntoDocument(
       <MaskedInput
-      value='123'
-      mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}/>
+        value='123'
+        mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}/>
     )
     const renderedDOMComponent = ReactTestUtils.findRenderedDOMComponentWithTag(maskedInput, 'input')
 
@@ -202,8 +202,8 @@ describe('MaskedInput', () => {
   it('can pass textMaskConfig to textMaskInputElement.update method', () => {
     const maskedInput = ReactTestUtils.renderIntoDocument(
       <MaskedInput
-      value='123'
-      mask={false}/>
+        value='123'
+        mask={false}/>
     )
     const renderedDOMComponent = ReactTestUtils.findRenderedDOMComponentWithTag(maskedInput, 'input')
 
@@ -219,11 +219,11 @@ describe('MaskedInput', () => {
   it('accepts function as mask property', () => {
     const maskedInput = ReactTestUtils.renderIntoDocument(
       <MaskedInput
-      value='1234'
-      mask={(value) => {
-        expect(value).to.equal('1234')
-        return ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
-      }}/>
+        value='1234'
+        mask={(value) => {
+          expect(value).to.equal('1234')
+          return ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
+        }}/>
     )
     const renderedDOMComponent = ReactTestUtils.findRenderedDOMComponentWithTag(maskedInput, 'input')
     expect(renderedDOMComponent.value).to.equal('(123) 4__-____')
@@ -232,8 +232,8 @@ describe('MaskedInput', () => {
   it('accepts object as mask property', () => {
     const maskedInput = ReactTestUtils.renderIntoDocument(
       <MaskedInput
-      value='abc'
-      mask={emailMask}/>
+        value='abc'
+        mask={emailMask}/>
     )
     const renderedDOMComponent = ReactTestUtils.findRenderedDOMComponentWithTag(maskedInput, 'input')
     expect(renderedDOMComponent.value).to.equal('abc@ .')
@@ -242,12 +242,12 @@ describe('MaskedInput', () => {
   it('accepts pipe function', () => {
     const maskedInput = ReactTestUtils.renderIntoDocument(
       <MaskedInput
-      value='1234'
-      mask={['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
-      pipe={(value) => {
-        expect(value).to.equal('(123) 4__-____')
-        return 'abc'
-      }}/>
+        value='1234'
+        mask={['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+        pipe={(value) => {
+          expect(value).to.equal('(123) 4__-____')
+          return 'abc'
+        }}/>
     )
     const renderedDOMComponent = ReactTestUtils.findRenderedDOMComponentWithTag(maskedInput, 'input')
     expect(renderedDOMComponent.value).to.equal('abc')
@@ -329,10 +329,10 @@ describe('MaskedInput', () => {
 
       render() {
         return <MaskedInput
-        onChange={this.onChange}
-        value={this.state.value}
-        mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
-        guide={false}/>
+          onChange={this.onChange}
+          value={this.state.value}
+          mask={['(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+          guide={false}/>
       }
     }
 
@@ -429,26 +429,26 @@ describe('MaskedInput as controlled component', () => {
     render() {
       return (
         <div>
-            <input onChange={this.onChange} value={this.state.value} className={'user-input'}/>
-            <MaskedInput
-              value={this.state.value}
-              mask={this.state.mask}
-              guide={this.state.guide}
-              placeholderChar={this.state.placeholderChar}
-              showMask={this.state.showMask}
-              pipe={this.state.pipe}
-              className={'masked-input'}
-            />
-            <button className='mask-array-button' onClick={this.onMaskArray}>Change mask array</button>
-            <button className='mask-function-button' onClick={this.onMaskFunction}>Change mask function</button>
-            <button className='guide-on-button' onClick={this.onGuideOn}>Guide On</button>
-            <button className='placeholderChar-button' onClick={this.onPlaceholderChar}>
+          <input onChange={this.onChange} value={this.state.value} className={'user-input'}/>
+          <MaskedInput
+            value={this.state.value}
+            mask={this.state.mask}
+            guide={this.state.guide}
+            placeholderChar={this.state.placeholderChar}
+            showMask={this.state.showMask}
+            pipe={this.state.pipe}
+            className={'masked-input'}
+          />
+          <button className='mask-array-button' onClick={this.onMaskArray}>Change mask array</button>
+          <button className='mask-function-button' onClick={this.onMaskFunction}>Change mask function</button>
+          <button className='guide-on-button' onClick={this.onGuideOn}>Guide On</button>
+          <button className='placeholderChar-button' onClick={this.onPlaceholderChar}>
               Change placeholderChar
-            </button>
-            <button className='showMask-on-button' onClick={this.onShowMaskOn}>ShowMask On</button>
-            <button className='pipe-on-button' onClick={this.onPipeOn}>Pipe On</button>
-            <button className='pipe-off-button' onClick={this.onPipeOff}>Pipe Off</button>
-            <button className='pipe-another-button' onClick={this.onPipeAnother}>Pipe Another</button>
+          </button>
+          <button className='showMask-on-button' onClick={this.onShowMaskOn}>ShowMask On</button>
+          <button className='pipe-on-button' onClick={this.onPipeOn}>Pipe On</button>
+          <button className='pipe-off-button' onClick={this.onPipeOff}>Pipe Off</button>
+          <button className='pipe-another-button' onClick={this.onPipeAnother}>Pipe Another</button>
         </div>
       )
     }

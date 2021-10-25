@@ -1,6 +1,7 @@
 import './styles.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
+import createReactClass from 'create-react-class'
 import MaskedInput from '../../react/src/reactTextMask'
 import classnames from 'classnames'
 import appStyles from './app.scss'
@@ -10,7 +11,7 @@ import {connect} from 'react-redux'
 import {actionCreators, selectors} from './redux'
 import HelpPanel from './helpPanel'
 
-const App = React.createClass({
+const App = createReactClass({
   componentDidUpdate() {
     if (this.props.shouldFocusMaskedInput) {
       this.focusMaskedInput()
@@ -131,7 +132,7 @@ export default connect(
 )(App)
 
 function convertMaskForDisplay(mask) {
-  let displayMask = mask
+  const displayMask = mask
     .toString()
     .split(',')
     .map((element) => {

@@ -5,14 +5,14 @@
 First, install it.
 
 ```bash
-npm i react-text-mask --save
+npm i react-text-mask-legacy --save
 ```
 
 Then, require it and use it.
 
 ```js
 import React from 'react'
-import MaskedInput from 'react-text-mask'
+import MaskedInput from 'react-text-mask-legacy'
 
 export default () => (
   <div>
@@ -43,7 +43,7 @@ For example, the following works:
 ## Documentation
 
 For more information about the `props` that you can pass to the component, see
-the [documentation here](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#readme).
+the [documentation here](https://github.com/Gruven/text-mask/blob/master/componentDocumentation.md#readme).
 
 ## Example
 
@@ -55,7 +55,7 @@ To see an example of the code running, follow these steps:
 1. `npm run react:dev`
 1. Open [http://localhost:3000](http://localhost:3000)
 
-The code of the example is in [`react/example`](https://github.com/text-mask/text-mask/tree/master/react/example).
+The code of the example is in [`react/example`](https://github.com/Gruven/text-mask/tree/master/react/example).
 
 ## Customize Rendered `<input>` Component
 
@@ -82,4 +82,4 @@ const MyStyledInput = styled.input`
 
 ## Contributing
 
-We would love some contributions! Check out [this document](https://github.com/text-mask/text-mask/blob/master/howToContribute.md#readme) to get started.
+We would love some contributions! Check out [this document](https://github.com/Gruven/text-mask/blob/master/howToContribute.md#readme) to get started.

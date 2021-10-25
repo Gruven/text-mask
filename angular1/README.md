@@ -5,7 +5,7 @@
 First, install it.
 
 ```bash
-npm i angular1-text-mask --save
+npm i angular1-text-mask-legacy --save
 ```
 
 Then, use it as follows:
@@ -26,10 +26,10 @@ Then, use it as follows:
     })
     .controller(function() {
       var vm = this
-  
+
       this.myModel = ''
       this.modelWithValue = '5554441234'
-  
+
       this.textMaskConfig = {
         mask: ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
       }
@@ -41,8 +41,8 @@ Then, use it as follows:
 
 As you can see in the code above, you are passing an object to the `text-mask` directive.
 
-For more information about the values that the `text-mask` object accepts, see 
-**[this page](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#readme)**.
+For more information about the values that the `text-mask` object accepts, see
+**[this page](https://github.com/Gruven/text-mask/blob/master/componentDocumentation.md#readme)**.
 
 ## Example
 
@@ -54,4 +54,4 @@ To see an example of a minimal app running with this directive, follow these ste
 1. `npm run angular1:dev`
 1. Open [http://localhost:3000](http://localhost:3000)
 
-The code of the example is in [`angular1/example`](https://github.com/text-mask/text-mask/tree/master/angular1/example).
+The code of the example is in [`angular1/example`](https://github.com/Gruven/text-mask/tree/master/angular1/example).

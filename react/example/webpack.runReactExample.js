@@ -1,12 +1,11 @@
-var path = require('path')
-var webpack = require('webpack')
-var coreLoaders = require('../../core/webpack.buildCore.js').module.loaders
+const path = require('path')
+require('webpack')
+const coreLoaders = require('../../core/webpack.buildCore.js').module.rules
 
 module.exports = {
+  mode: 'development',
   devtool: 'eval',
   entry: [
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server',
     path.join(__dirname, '/index.js')
   ],
   output: {
@@ -14,17 +13,22 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/'
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
-  ],
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
   module: {
-    loaders: [{
+    rules: [{
       test: /\.jsx?$/,
-      loaders: ['react-hot', 'babel-loader'],
+      use: [
+        'react-hot-loader/webpack',
+        {
+          loader: 'babel-loader',
+          options: {
+            plugins: ['react-hot-loader/babel'],
+            rootMode: 'upward'
+          }
+        }
+      ],
       include: [
         __dirname,
         path.join(__dirname, '../src'),

@@ -14,7 +14,7 @@ RegExp.prototype.toJSON = function() {
 
 global.getLineNumber = function() {
   const err = new Error()
-  const stack = err['stack']
+  const stack = err.stack
   const stackLines = stack.split('\n')
   const calleeLine = stackLines[2]
   const lineNumber = calleeLine.match(/\(.+:(\d+):\d+\)/)[1]

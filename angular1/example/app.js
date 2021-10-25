@@ -1,4 +1,4 @@
-/*global angular*/
+/* global angular */
 
 (function() {
   'use strict'
@@ -17,7 +17,7 @@
 
   /* @ngInject */
   function DemoController() {
-    var vm = this
+    const vm = this
 
     vm.myModel = ''
     vm.modelWithValue = '5554441234'

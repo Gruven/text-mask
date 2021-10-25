@@ -20,7 +20,7 @@
 The way to define a mask in Text Mask is through an array.
 
 Each element in the array has to be either a string or a regular expression. Each string is a fixed character in the mask
-and each regular expression is a placeholder that accepts user input. 
+and each regular expression is a placeholder that accepts user input.
 
 The regular expression will be used to test user input and either allow it or reject it.
 
@@ -31,7 +31,7 @@ For example, a mask for a U.S. phone number such as `(555) 392-4932`, could be:
 ```
 
 That means the user can enter only a number between 1 and 9 in the first placeholder, and only a digit in the placeholders
-after that. 
+after that.
 
 Any valid regular expressions should work.
 
@@ -53,8 +53,8 @@ This feature is useful when we want to format a user input of unknown length, su
 formatting a number to currency or formatting a string to email address mask.
 
 For an example of a mask function, see the source code of
-[`createNumberMask`](https://github.com/text-mask/text-mask/blob/master/addons/src/createNumberMask.js),
-which is a [Text Mask addon](https://github.com/text-mask/text-mask/tree/master/addons/#readme).
+[`createNumberMask`](https://github.com/Gruven/text-mask/blob/master/addons/src/createNumberMask.js),
+which is a [Text Mask addon](https://github.com/Gruven/text-mask/tree/master/addons/#readme).
 
 <p align="center">
 <img src="assets/dynamicMask.gif"/>
@@ -111,7 +111,7 @@ For example, with mask...
 ```js
 ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
 ```
- 
+
 ...the user would fill out `(___) ___-____`.
 
 You can pass a different placeholder character. For example, the unicode character `U+2000` would
@@ -171,7 +171,7 @@ The `pipe` function receives:
 1. `conformedValue`
 1. `config`
 
-The `conformedValue` is the value that the user entered after it has been conformed. `config` is an object that 
+The `conformedValue` is the value that the user entered after it has been conformed. `config` is an object that
 contains all the user configurations for Text Mask (the ones detailed on this page).
 
 The `pipe` function must return one of the following: `false`, `string`, or `object`.
@@ -179,7 +179,7 @@ The `pipe` function must return one of the following: `false`, `string`, or `obj
 Return `false` to reject the new conformed value and keep the input field from changing.
 
 If the `pipe` modifies the string without adding new characters, for example, changing letter capitalization or removing
-characters, it should return the modified string. 
+characters, it should return the modified string.
 
 If the `pipe` adds new characters to the string, it must return an object with the following keys:
 
@@ -188,8 +188,8 @@ If the `pipe` adds new characters to the string, it must return an object with t
 `pipe` to the conformed value
 
 For an example of a pipe, see the code for
-[`createAutoCorrectedDatePipe`](https://github.com/text-mask/text-mask/blob/master/addons/src/createAutoCorrectedDatePipe.js)
-which is a [Text Mask addon](https://github.com/text-mask/text-mask/tree/master/addons/#readme).
+[`createAutoCorrectedDatePipe`](https://github.com/Gruven/text-mask/blob/master/addons/src/createAutoCorrectedDatePipe.js)
+which is a [Text Mask addon](https://github.com/Gruven/text-mask/tree/master/addons/#readme).
 
 
 ## `showMask`
@@ -201,7 +201,7 @@ placeholder in place of the regular placeholder when the input element value is 
 
 ## Included `conformToMask`
 
-[`conformToMask`](https://github.com/text-mask/text-mask/blob/master/core/src/conformToMask.js)
+[`conformToMask`](https://github.com/Gruven/text-mask/blob/master/core/src/conformToMask.js)
  is the function that Text Mask uses to transform text to the given mask.
 
 #### Importing it
@@ -210,7 +210,7 @@ It is included with Text Mask components for convenience. So you can import it f
 package as follows
 
 ```js
-import textMask, {conformToMask} from 'where-you-import-text-mask-from' 
+import textMask, {conformToMask} from 'where-you-import-text-mask-from'
 ```
 
 #### Using it
@@ -221,8 +221,8 @@ import textMask, {conformToMask} from 'where-you-import-text-mask-from'
 * [mask](#mask) (array) (required)
 * config (object) (optional)
 
-`config` is [these values](https://github.com/text-mask/text-mask/blob/master/core/src/conformToMask.js#L9-L14).
-The linked variable names have similar names to properties that are described above in this document. So you can 
+`config` is [these values](https://github.com/Gruven/text-mask/blob/master/core/src/conformToMask.js#L9-L14).
+The linked variable names have similar names to properties that are described above in this document. So you can
 learn what each one is for by reading the documentation above.
 
 The return value of `conformToMask` is an object with the following shape:
@@ -258,5 +258,5 @@ console.log(conformedPhoneNumber.conformedValue) // prints (555) 123-4444
 ### Supported `<input>` types
 
 Please note that Text Mask supports input type of `text`, `tel`, `url`, `password`, and `search`. Due to a limitation
-in browser API, other input types, such as `email` or `number`, cannot be supported. However, it is normal to let the 
+in browser API, other input types, such as `email` or `number`, cannot be supported. However, it is normal to let the
 user enter an email or a number in an input type `text` combined the appropriate input mask.

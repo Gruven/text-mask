@@ -1,6 +1,7 @@
 {
+	"extends": "standard",
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 2021,
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
       "jsx": true
@@ -28,7 +29,6 @@
   },
   "plugins": [
     "react",
-    "standard",
     "promise",
     "mocha"
   ],
@@ -287,14 +287,7 @@
       2,
       "never"
     ],
-    "standard/array-bracket-even-spacing": [
-      2,
-      "either"
-    ],
-    "standard/computed-property-even-spacing": [
-      2,
-      "even"
-    ],
-    "promise/param-names": 2
+    "promise/param-names": 2,
+		"no-mixed-operators": 0
   }
 }

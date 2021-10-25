@@ -7,7 +7,7 @@
 First, install it.
 
 ```bash
-npm i vanilla-text-mask --save
+npm i vanilla-text-mask-legacy --save
 ```
 
 Then, use it as follows:
@@ -26,8 +26,8 @@ Then, use it as follows:
     inputElement: myInput,
     mask: phoneMask
   })
-  
-  // Calling `vanillaTextMask.maskInput` adds event listeners to the input element. 
+
+  // Calling `vanillaTextMask.maskInput` adds event listeners to the input element.
   // If you need to remove those event listeners, you can call
   maskedInputController.destroy()
 </script>
@@ -39,7 +39,7 @@ As you can see in the code above, you are passing an object to `vanillaTextMask.
 
 The object takes `inputElement`, which is the `<input/>` element that you are masking. It also
 accepts other values which are
-[documented here](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#readme).
+[documented here](https://github.com/Gruven/text-mask/blob/master/componentDocumentation.md#readme).
 
 ## Example
 
@@ -51,8 +51,8 @@ To see an example of the code running, follow these steps:
 1. `npm run vanilla:dev`
 1. Open [http://localhost:3000](http://localhost:3000)
 
-The code of the example is in [`vanilla/example`](https://github.com/text-mask/text-mask/tree/master/vanilla/example).
+The code of the example is in [`vanilla/example`](https://github.com/Gruven/text-mask/tree/master/vanilla/example).
 
 ## Contributing
 
-We would love some contributions! Check out [this document](https://github.com/text-mask/text-mask/blob/master/howToContribute.md#readme) to get started.
+We would love some contributions! Check out [this document](https://github.com/Gruven/text-mask/blob/master/howToContribute.md#readme) to get started.

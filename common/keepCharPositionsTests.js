@@ -11,7 +11,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 11,
 
   conformedValue: '(650) 394-2_11',
-  adjustedCaretPosition: 11,
+  adjustedCaretPosition: 11
 
   // only: true
 }, {
@@ -23,7 +23,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 6,
 
   conformedValue: '(650) _94-2_11',
-  adjustedCaretPosition: 6,
+  adjustedCaretPosition: 6
 
   // only: true
 }, {
@@ -35,7 +35,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 9,
 
   conformedValue: '(650) 394-2_11',
-  adjustedCaretPosition: 9,
+  adjustedCaretPosition: 9
 
   // only: true
 }, {
@@ -47,7 +47,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 7,
 
   conformedValue: '(650) 3__-2_11',
-  adjustedCaretPosition: 7,
+  adjustedCaretPosition: 7
 
   // only: true
 }, {
@@ -59,7 +59,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 3,
 
   conformedValue: '(65_) ___-2_11',
-  adjustedCaretPosition: 3,
+  adjustedCaretPosition: 3
 
   // only: true
 
@@ -76,7 +76,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 7,
 
   conformedValue: '(650) 4__-3___',
-  adjustedCaretPosition: 7,
+  adjustedCaretPosition: 7
 
   // only: true
 }, {
@@ -88,7 +88,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 9,
 
   conformedValue: '(650) ___-3___',
-  adjustedCaretPosition: 8,
+  adjustedCaretPosition: 8
 
   // only: true
 }, {
@@ -100,7 +100,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 11,
 
   conformedValue: '(650) __2-3___',
-  adjustedCaretPosition: 11,
+  adjustedCaretPosition: 11
 
   // only: true
 }, {
@@ -112,7 +112,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 11,
 
   conformedValue: '(902) 394-8__3',
-  adjustedCaretPosition: 11,
+  adjustedCaretPosition: 11
 
   // only: true
 }, {
@@ -124,7 +124,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 17,
 
   conformedValue: '(830) 203-8__3',
-  adjustedCaretPosition: 11,
+  adjustedCaretPosition: 11
 
   // only: true
 }, {
@@ -136,7 +136,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 10,
 
   conformedValue: '(830) 203-8__3',
-  adjustedCaretPosition: 11,
+  adjustedCaretPosition: 11
 
   // only: true
 }, {
@@ -151,7 +151,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 10,
 
   conformedValue: '(830) 203-4__3',
-  adjustedCaretPosition: 11,
+  adjustedCaretPosition: 11
 
   // only: true
 }])

@@ -1,4 +1,4 @@
-/*global angular*/
+/* global angular */
 import createTextMaskInputElement from '../../core/src/createTextMaskInputElement'
 
 function textMask() {
@@ -11,8 +11,8 @@ function textMask() {
       textMask: '='
     },
     link: function(scope, element, attrs, ngModel) {
-      var inputElement
-      var textMaskInputElement
+      let inputElement
+      let textMaskInputElement
 
       if (element[0].tagName === 'INPUT') {
         // `textMask` directive is used directly on an input element
@@ -41,7 +41,7 @@ function textMask() {
 
       function formatter(fromModelValue) {
         // set the `inputElement.value` for cases where the `mask` is disabled
-        var normalizedValue = fromModelValue == null ? '' : fromModelValue
+        const normalizedValue = fromModelValue == null ? '' : fromModelValue
         inputElement.value = normalizedValue
 
         textMaskInputElement.update(normalizedValue)

@@ -1,5 +1,5 @@
 import {convertMaskToPlaceholder, isArray, processCaretTraps} from './utilities'
-import {placeholderChar as defaultPlaceholderChar, strFunction} from './constants'
+import {placeholderChar as defaultPlaceholderChar} from './constants'
 
 const emptyArray = []
 const emptyString = ''
@@ -10,7 +10,7 @@ export default function conformToMask(rawValue = emptyString, mask = emptyArray,
     // function to get the mask array - Normally this is handled by the
     // `createTextMaskInputElement:update` function - this allows mask functions
     // to be used directly with `conformToMask`
-    if (typeof mask === strFunction) {
+    if (typeof mask === 'function') {
       // call the mask function to get the mask array
       mask = mask(rawValue, config)
 

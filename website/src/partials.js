@@ -4,7 +4,7 @@ const HelpLink = ({section}) => {
   return (
     <a
       className='small'
-      href={`https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#${section}`}
+      href={`https://github.com/Gruven/text-mask/blob/master/componentDocumentation.md#${section}`}
       target='_blank'
     >
       <span className='glyphicon glyphicon-question-sign'/>
@@ -55,13 +55,13 @@ export const DemoBottom = () => (
   <div className='col-sm-8 col-sm-offset-4'>
     <p>
       For more information about
-      installation, usage, and documentation, see the <a href='https://github.com/text-mask/text-mask/'>GitHub page</a>.
+      installation, usage, and documentation, see the <a href='https://github.com/Gruven/text-mask/'>GitHub page</a>.
     </p>
 
     <p>
       For any questions, suggestions, or feature requests, please
       {' '}
-      <a href='https://github.com/text-mask/text-mask/issues' target='_blank'>file an issue</a>!
+      <a href='https://github.com/Gruven/text-mask/issues' target='_blank'>file an issue</a>!
     </p>
   </div>
 )
@@ -72,7 +72,7 @@ export const Links = {
   createAutoCorrectedDatePipe() {
     return (
       <Link
-        url='https://github.com/text-mask/text-mask/tree/master/addons#createautocorrecteddatepipe'
+        url='https://github.com/Gruven/text-mask/tree/master/addons#createautocorrecteddatepipe'
         text='createAutoCorrectedDatePipe'
       />
     )
@@ -80,7 +80,7 @@ export const Links = {
   addon() {
     return (
       <Link
-        url='https://github.com/text-mask/text-mask/tree/master/addons/#readme'
+        url='https://github.com/Gruven/text-mask/tree/master/addons/#readme'
         text='addon'
       />
     )
@@ -88,7 +88,7 @@ export const Links = {
   maskFunction() {
     return (
       <Link
-        url='https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#mask-function'
+        url='https://github.com/Gruven/text-mask/blob/master/componentDocumentation.md#mask-function'
         text='mask function'
       />
     )
@@ -96,7 +96,7 @@ export const Links = {
   pipe() {
     return (
       <Link
-        url='https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#pipe'
+        url='https://github.com/Gruven/text-mask/blob/master/componentDocumentation.md#pipe'
         text='pipe'
       />
     )
@@ -104,7 +104,7 @@ export const Links = {
   createNumberMask() {
     return (
       <Link
-        url='https://github.com/text-mask/text-mask/tree/master/addons#createnumbermask'
+        url='https://github.com/Gruven/text-mask/tree/master/addons#createnumbermask'
         text='createNumberMask'
       />
     )
@@ -112,7 +112,7 @@ export const Links = {
   emailMask() {
     return (
       <Link
-        url='https://github.com/text-mask/text-mask/tree/master/addons#emailmask'
+        url='https://github.com/Gruven/text-mask/tree/master/addons#emailmask'
         text='emailMask'
       />
     )

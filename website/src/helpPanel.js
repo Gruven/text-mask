@@ -1,5 +1,6 @@
 import './styles.scss'
 import React from 'react'
+import createReactClass from 'create-react-class'
 import {connect} from 'react-redux'
 import {Links, Panel, Row} from './partials'
 
@@ -17,7 +18,7 @@ const MaskFunctionDefinition = ({maskLink}) => (
   </div>
 )
 
-const HelpPanel = React.createClass({
+const HelpPanel = createReactClass({
   render() {
     const {props} = this
 

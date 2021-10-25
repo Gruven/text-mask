@@ -23,7 +23,7 @@ const eventTest = Vue.extend({
       ref="maskedInput"
       type="text"
       name="test"
-      :mask="[/\d/,/\d/,/\d/]"
+      :mask="[/\\d/,/\\d/,/\\d/]"
       @focus="callback('focus')"
       @blur="callback('blur')"
       @keypress="callback('keypress')">
@@ -31,8 +31,8 @@ const eventTest = Vue.extend({
   </div>`,
   components: {maskedInput},
   methods: {
-    callback(e) { },
-  },
+    callback(e) { }
+  }
 })
 
 describe('inputMask', () => {

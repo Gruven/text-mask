@@ -24,8 +24,8 @@ export default function emailPipe(conformedValue, config) {
 
   if (
     value.indexOf(dotDot) !== -1 ||
-    indexOfAtDot !== -1 && currentCaretPosition !== (indexOfAtDot + 1) ||
-    rawValue.indexOf(atSymbol) === -1 && previousConformedValue !== emptyString && rawValue.indexOf(dot) !== -1
+    (indexOfAtDot !== -1 && currentCaretPosition !== (indexOfAtDot + 1)) ||
+    (rawValue.indexOf(atSymbol) === -1 && previousConformedValue !== emptyString && rawValue.indexOf(dot) !== -1)
   ) {
     return false
   }
