@@ -32,19 +32,19 @@ export default map(
     mask: [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/],
     pipe: createAutoCorrectedDatePipe(),
     placeholder: 'Please enter a date',
-    keepCharPositions: true,
+    keepCharPositions: true
   }, {
     name: 'US dollar amount',
     mask: createNumberMask(),
-    placeholder: 'Enter an amount',
+    placeholder: 'Enter an amount'
   }, {
     name: 'US dollar amount (allows decimal)',
     mask: createNumberMask({allowDecimal: true}),
-    placeholder: 'Enter an amount',
+    placeholder: 'Enter an amount'
   }, {
     name: 'Percentage amount',
     mask: createNumberMask({suffix: '%', prefix: ''}),
-    placeholder: 'Enter an amount',
+    placeholder: 'Enter an amount'
   }, {
     name: 'Email',
     mask: emailMask,

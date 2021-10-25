@@ -1,12 +1,11 @@
-var path = require('path')
-var webpack = require('webpack')
-var coreLoaders = require('../core/webpack.buildCore.js').module.loaders
+const path = require('path')
+require('webpack')
+const coreLoaders = require('../core/webpack.buildCore.js').module.rules
 
 module.exports = {
+  mode: 'development',
   devtool: 'eval',
   entry: [
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server',
     path.join(__dirname, '../website/src/index.js')
   ],
   output: {
@@ -14,17 +13,22 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/website/static/'
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
-  ],
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
   module: {
-    loaders: [{
+    rules: [{
       test: /\.jsx?$/,
-      loaders: ['react-hot', 'babel-loader'],
+      use: [
+        'react-hot-loader/webpack',
+        {
+          loader: 'babel-loader',
+          options: {
+            plugins: ['react-hot-loader/babel'],
+            rootMode: 'upward'
+          }
+        }
+      ],
       include: [
         path.join(__dirname, '../website/src/'),
         path.join(__dirname, '../react/')
@@ -32,19 +36,38 @@ module.exports = {
     }, {
       // Process website/src/styles.scss as a regular Sass file
       test: /\.scss$/,
-      loaders: ['style', 'css', 'sass'],
+      use: ['style-loader', 'css-loader', 'sass-loader'],
       include: path.join(__dirname, '../website/src/styles.scss')
     }, {
       // Process all Sass files other than website/src/styles.scss as CSS Modules
       test: /\.scss$/,
-      loaders: ['style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', 'sass'],
-      exclude: path.join(__dirname, '../website/src/styles.scss'),
+      use: [
+        'style-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            importLoaders: 1,
+            modules: {
+              localIdentName: '[name]__[local]___[hash:base64:5]'
+            }
+          }
+        },
+        'sass-loader'
+      ],
+      exclude: path.join(__dirname, '../website/src/styles.scss')
     }, {
       test: /\.(woff2?|svg)$/,
-      loader: 'url?limit=10000'
+      loader: 'url-loader',
+      options: {
+        limit: 10000
+      }
     }, {
       test: /\.(ttf|eot)$/,
-      loader: 'file'
+      loader: 'file-loader'
     }].concat(coreLoaders)
+  },
+  performance: {
+    maxEntrypointSize: 5000000,
+    maxAssetSize: 5000000
   }
 }

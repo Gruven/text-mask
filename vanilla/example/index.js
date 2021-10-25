@@ -1,6 +1,6 @@
 import maskInput from '../src/vanillaTextMask'
 
-var myInput = document.querySelector('.myInput')
+const myInput = document.querySelector('.myInput')
 
 maskInput({
   inputElement: myInput,

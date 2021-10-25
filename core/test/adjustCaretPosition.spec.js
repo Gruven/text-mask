@@ -20,7 +20,7 @@ describe('adjustCaretPosition', () => {
       conformedValue: '________-___',
       placeholder: convertMaskToPlaceholder([/\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/]),
       rawValue: '',
-      currentCaretPosition: 3,
+      currentCaretPosition: 3
     })).to.equal(0)
   })
 
@@ -134,7 +134,7 @@ describe('adjustCaretPosition', () => {
       (test) => ({
         description: `for input: ${JSON.stringify(_.pick(test, testInputs))}, it knows to adjust the caret to '${
           test.adjustedCaretPosition
-          }'. Line: ${test.line}`,
+        }'. Line: ${test.line}`,
 
         body: () => {
           expect(adjustCaretPosition({
@@ -145,7 +145,7 @@ describe('adjustCaretPosition', () => {
             placeholder: convertMaskToPlaceholder(test.mask),
             guide: true,
             placeholderChar,
-            currentCaretPosition: test.currentCaretPosition,
+            currentCaretPosition: test.currentCaretPosition
           })).to.equal(test.adjustedCaretPosition)
         }
       })
@@ -173,7 +173,7 @@ describe('adjustCaretPosition', () => {
             placeholder: convertMaskToPlaceholder(test.mask),
             guide: false,
             placeholderChar,
-            currentCaretPosition: test.currentCaretPosition,
+            currentCaretPosition: test.currentCaretPosition
           })).to.equal(test.adjustedCaretPosition)
         }
       })
@@ -198,7 +198,7 @@ describe('adjustCaretPosition', () => {
             placeholder: convertMaskToPlaceholder(test.mask),
             guide: false,
             placeholderChar,
-            currentCaretPosition: test.currentCaretPosition,
+            currentCaretPosition: test.currentCaretPosition
           })).to.equal(test.adjustedCaretPosition)
         }
       })

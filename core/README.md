@@ -11,7 +11,7 @@ and documented here as a separate module.
 To download the script, use npm.
 
 ```bash
-npm i text-mask-core --save
+npm i text-mask-core-legacy --save
 ```
 
 
@@ -66,7 +66,7 @@ const textMaskInputElement = createTextMaskInputElement(textMaskConfig)
 textMaskInputElement.update()
 ```
 
-The `textMaskConfig` requires a `mask` and a reference to the `inputElement`.  See the [documentation here](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#readme) for more information on the properties that the `textMaskConfig` accepts.
+The `textMaskConfig` requires a `mask` and a reference to the `inputElement`.  See the [documentation here](https://github.com/Gruven/text-mask/blob/master/componentDocumentation.md#readme) for more information on the properties that the `textMaskConfig` accepts.
 
 The default use-case is for the `textMaskConfig` to be passed to the `createTextMaskInputElement` method when you initialize Text Mask.  However, you can also pass the `value` and `textMaskConfig` to the `update` method.
 
@@ -90,7 +90,7 @@ This function takes three arguments:
 
 * rawValue (string): the string value that you want to conform to the mask
 * mask (array or function): the mask to which you want the string to conform. You can find
-[mask documentation here](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#readme).
+[mask documentation here](https://github.com/Gruven/text-mask/blob/master/componentDocumentation.md#readme).
 * config (object): config object. See below for details
 
 This function returns an object with a property `conformedValue` (string).
@@ -114,7 +114,7 @@ mask hard characters. For example, with mask `['(', /[1-9]/, /\d/, /\d/, ')', ' 
 If you're calling `conformToMask` for the first time, you don't have to pass this value.
 
 * `placeholderChar` (string) (optional): for documentation on this key, [see this section of the component
-documentation page](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#placeholderChar).
+documentation page](https://github.com/Gruven/text-mask/blob/master/componentDocumentation.md#placeholderChar).
 
 ```js
 const results = conformToMask('5554833902', ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/])

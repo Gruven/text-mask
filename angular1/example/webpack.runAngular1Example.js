@@ -1,6 +1,6 @@
-var path = require('path')
-var webpack = require('webpack')
-var coreLoaders = require('../../core/webpack.buildCore.js').module.loaders
+const path = require('path')
+const webpack = require('webpack')
+const coreLoaders = require('../../core/webpack.buildCore.js').module.loaders
 
 module.exports = {
   devtool: 'eval',

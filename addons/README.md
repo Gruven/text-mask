@@ -5,13 +5,13 @@ These addons are ready-to-use pipes and masks that can be used with Text Mask.
 ## Installation
 
 ```bash
-npm i text-mask-addons --save
+npm i text-mask-addons-legacy --save
 ```
 
 ## Masks
 
 These can be passed as a
-[`mask`](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#mask)
+[`mask`](https://github.com/Gruven/text-mask/blob/master/componentDocumentation.md#mask)
 to Text Mask.
 
 ### `createNumberMask`
@@ -58,13 +58,13 @@ import emailMask from 'text-mask-addons/dist/emailMask'
 // ...then pass `emailMask` to the Text Mask component as the mask
 ```
 
-*Technical side note*: even though `emailMask` is passed as a `mask`, it is actually made of both a `mask` and a `pipe` bundled 
-together for convenience. The Text Mask component knows how to unwrap and separate the `pipe` and `mask` functions to use them. 
+*Technical side note*: even though `emailMask` is passed as a `mask`, it is actually made of both a `mask` and a `pipe` bundled
+together for convenience. The Text Mask component knows how to unwrap and separate the `pipe` and `mask` functions to use them.
 
 ## Pipes
 
 These functions here can be passed as a
-[`pipe`](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#pipe)
+[`pipe`](https://github.com/Gruven/text-mask/blob/master/componentDocumentation.md#pipe)
 to Text Mask.
 
 ### `createAutoCorrectedDatePipe`
@@ -84,7 +84,7 @@ It also blocks the user from entering invalid days or months such as `33/44`.
 
 For `createAutoCorrectedDatePipe` to work properly, the Text Mask component needs to be
 configured with
-[`keepCharPositions`](https://github.com/text-mask/text-mask/blob/master/componentDocumentation.md#keepcharpositions)
+[`keepCharPositions`](https://github.com/Gruven/text-mask/blob/master/componentDocumentation.md#keepcharpositions)
 set to `true`.
 
 #### Usage
@@ -93,7 +93,7 @@ set to `true`.
 import createAutoCorrectedDatePipe from 'text-mask-addons/dist/createAutoCorrectedDatePipe'
 
 const autoCorrectedDatePipe = createAutoCorrectedDatePipe('mm/dd/yyyy HH:MM')
-// As you can see in the line above, you can pass a string argument to `createAutoCorrectedDatePipe` 
+// As you can see in the line above, you can pass a string argument to `createAutoCorrectedDatePipe`
 // to give it the order of day, month, year, hour and minute in your `mask`.
 
 // ...now you can pass `autoCorrectedDatePipe` to the Text Mask component as the `pipe`

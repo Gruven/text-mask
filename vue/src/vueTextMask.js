@@ -9,7 +9,7 @@ export default {
       },
       attrs: this.$attrs,
       on: Object.assign({...this.$listeners}, {
-        input: (event) => this.updateValue(event.target.value),
+        input: (event) => this.updateValue(event.target.value)
       })
     })
   },
@@ -83,7 +83,7 @@ export default {
     updateValue(value) {
       this.textMaskInputElement.update(value)
       this.$emit('input', this.$refs.input.value)
-    },
+    }
   },
 
   watch: {

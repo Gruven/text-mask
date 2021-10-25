@@ -1,11 +1,10 @@
 import adjustCaretPosition from './adjustCaretPosition'
 import conformToMask from './conformToMask'
 import {convertMaskToPlaceholder, isString, isNumber, processCaretTraps} from './utilities'
-import {placeholderChar as defaultPlaceholderChar, strFunction} from './constants'
+import {placeholderChar as defaultPlaceholderChar} from './constants'
 
 const emptyString = ''
 const strNone = 'none'
-const strObject = 'object'
 const isAndroid = typeof navigator !== 'undefined' && /Android/i.test(navigator.userAgent)
 const defer = typeof requestAnimationFrame !== 'undefined' ? requestAnimationFrame : setTimeout
 
@@ -40,7 +39,7 @@ export default function createTextMaskInputElement(config) {
       // Text Mask accepts masks that are a combination of a `mask` and a `pipe` that work together. If such a `mask` is
       // passed, we destructure it below, so the rest of the code can work normally as if a separate `mask` and a `pipe`
       // were passed.
-      if (typeof providedMask === strObject && providedMask.pipe !== undefined && providedMask.mask !== undefined) {
+      if (typeof providedMask === 'object' && providedMask.pipe !== undefined && providedMask.mask !== undefined) {
         pipe = providedMask.pipe
         providedMask = providedMask.mask
       }
@@ -77,7 +76,7 @@ export default function createTextMaskInputElement(config) {
 
       // If the `providedMask` is a function. We need to call it at every `update` to get the `mask` array.
       // Then we also need to get the `placeholder`
-      if (typeof providedMask === strFunction) {
+      if (typeof providedMask === 'function') {
         mask = providedMask(safeRawValue, {currentCaretPosition, previousConformedValue, placeholderChar})
 
         // disable masking if `mask` is `false`
@@ -113,7 +112,7 @@ export default function createTextMaskInputElement(config) {
       const {conformedValue} = conformToMask(safeRawValue, mask, conformToMaskConfig)
 
       // The following few lines are to support the `pipe` feature.
-      const piped = typeof pipe === strFunction
+      const piped = typeof pipe === 'function'
 
       let pipeResults = {}
 

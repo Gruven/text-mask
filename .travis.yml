@@ -1,14 +1,18 @@
+dist: focal
 language: node_js
 
-node_js: 
-  - "7"
+node_js:
+  - "14"
+
+before_install:
+  - npm i -g npm@8
 
 install: true
 
 env:
   - SUBPROJECT=ci
-  - SUBPROJECT=angular2:ci
-  - SUBPROJECT=ember:test
+#  - SUBPROJECT=angular2:ci
+#  - SUBPROJECT=ember:test
 
 script:
   - npm run $SUBPROJECT

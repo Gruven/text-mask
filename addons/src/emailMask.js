@@ -19,8 +19,8 @@ function emailMask(rawValue, config) {
   const indexOfLastDot = rawValue.lastIndexOf(dot)
   const indexOfTopLevelDomainDot = (indexOfLastDot < indexOfFirstAtSymbol) ? -1 : indexOfLastDot
 
-  let localPartToDomainConnector = getConnector(rawValue, indexOfFirstAtSymbol + 1, atSymbol)
-  let domainNameToTopLevelDomainConnector = getConnector(rawValue, indexOfTopLevelDomainDot - 1, dot)
+  const localPartToDomainConnector = getConnector(rawValue, indexOfFirstAtSymbol + 1, atSymbol)
+  const domainNameToTopLevelDomainConnector = getConnector(rawValue, indexOfTopLevelDomainDot - 1, dot)
 
   let localPart = getLocalPart(rawValue, indexOfFirstAtSymbol, placeholderChar)
   let domainName = getDomainName(rawValue, indexOfFirstAtSymbol, indexOfTopLevelDomainDot, placeholderChar)

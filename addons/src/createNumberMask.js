@@ -5,7 +5,6 @@ const period = '.'
 const minus = '-'
 const minusRegExp = /-/
 const nonDigitsRegExp = /\D+/g
-const number = 'number'
 const digitRegExp = /\d/
 const caretTrap = '[]'
 
@@ -22,9 +21,9 @@ export default function createNumberMask({
   allowLeadingZeroes = false,
   integerLimit = null
 } = {}) {
-  const prefixLength = prefix && prefix.length || 0
-  const suffixLength = suffix && suffix.length || 0
-  const thousandsSeparatorSymbolLength = thousandsSeparatorSymbol && thousandsSeparatorSymbol.length || 0
+  const prefixLength = (prefix && prefix.length) || 0
+  const suffixLength = (suffix && suffix.length) || 0
+  const thousandsSeparatorSymbolLength = (thousandsSeparatorSymbol && thousandsSeparatorSymbol.length) || 0
 
   function numberMask(rawValue = emptyString) {
     const rawValueLength = rawValue.length
@@ -34,7 +33,7 @@ export default function createNumberMask({
       (rawValue[0] === prefix[0] && rawValueLength === 1)
     ) {
       return prefix.split(emptyString).concat([digitRegExp]).concat(suffix.split(emptyString))
-    } else if(
+    } else if (
       rawValue === decimalSymbol &&
       allowDecimal
     ) {
@@ -42,8 +41,8 @@ export default function createNumberMask({
     }
 
     const isNegative = (rawValue[0] === minus) && allowNegative
-    //If negative remove "-" sign
-    if(isNegative) {
+    // If negative remove "-" sign
+    if (isNegative) {
       rawValue = rawValue.toString().substr(1)
     }
 
@@ -72,7 +71,7 @@ export default function createNumberMask({
       }
     }
 
-    if (integerLimit && typeof integerLimit === number) {
+    if (integerLimit && typeof integerLimit === 'number') {
       const thousandsSeparatorRegex = thousandsSeparatorSymbol === '.' ? '[.]' : `${thousandsSeparatorSymbol}`
       const numberOfThousandSeparators = (integer.match(new RegExp(thousandsSeparatorRegex, 'g')) || []).length
 
@@ -97,7 +96,7 @@ export default function createNumberMask({
       mask.push(decimalSymbol, caretTrap)
 
       if (fraction) {
-        if (typeof decimalLimit === number) {
+        if (typeof decimalLimit === 'number') {
           fraction = fraction.slice(0, decimalLimit)
         }
 

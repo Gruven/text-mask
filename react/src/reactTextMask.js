@@ -22,7 +22,7 @@ export default class MaskedInput extends React.PureComponent {
 
     this.textMaskInputElement = createTextMaskInputElement({
       inputElement: this.inputElement,
-      ...props,
+      ...props
     })
     this.textMaskInputElement.update(value)
   }
@@ -42,7 +42,7 @@ export default class MaskedInput extends React.PureComponent {
     const settings = {guide, placeholderChar, showMask}
     const isPipeChanged = typeof pipe === 'function' && typeof prevProps.pipe === 'function' ?
       pipe.toString() !== prevProps.pipe.toString() :
-      isNil(pipe) && !isNil(prevProps.pipe) || !isNil(pipe) && isNil(prevProps.pipe)
+      (isNil(pipe) && !isNil(prevProps.pipe)) || (!isNil(pipe) && isNil(prevProps.pipe))
     const isMaskChanged = mask.toString() !== prevProps.mask.toString()
     const isSettingChanged =
       Object.keys(settings).some(prop => settings[prop] !== prevProps[prop]) ||
@@ -75,7 +75,7 @@ export default class MaskedInput extends React.PureComponent {
       onBlur: this.onBlur,
       onChange: this.onChange,
       defaultValue: this.props.value,
-      ...props,
+      ...props
     })
   }
 
@@ -101,15 +101,15 @@ MaskedInput.propTypes = {
     PropTypes.bool,
     PropTypes.shape({
       mask: PropTypes.oneOfType([PropTypes.array, PropTypes.func]),
-      pipe: PropTypes.func,
-    }),
+      pipe: PropTypes.func
+    })
   ]).isRequired,
   guide: PropTypes.bool,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   pipe: PropTypes.func,
   placeholderChar: PropTypes.string,
   keepCharPositions: PropTypes.bool,
-  showMask: PropTypes.bool,
+  showMask: PropTypes.bool
 }
 
 MaskedInput.defaultProps = {

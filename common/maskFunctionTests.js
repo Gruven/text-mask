@@ -8,7 +8,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 5,
   conformedValue: '$1,000',
 
-  adjustedCaretPosition: 6,
+  adjustedCaretPosition: 6
 }, {
   line: getLineNumber(),
 
@@ -18,7 +18,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 2,
   conformedValue: '24 $',
 
-  adjustedCaretPosition: 2,
+  adjustedCaretPosition: 2
 
   // only: true,
 }, {

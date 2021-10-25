@@ -16,7 +16,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 2,
 
   conformedValue: '(3__)',
-  adjustedCaretPosition: 2,
+  adjustedCaretPosition: 2
 
   // only: true
 }, {
@@ -29,7 +29,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 5,
 
   conformedValue: '$11,122',
-  adjustedCaretPosition: 5,
+  adjustedCaretPosition: 5
 
   // only: true
 }, {
@@ -42,7 +42,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 4,
 
   conformedValue: '$1,245',
-  adjustedCaretPosition: 4,
+  adjustedCaretPosition: 4
 
   // only: true
 }, {
@@ -55,7 +55,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 8,
 
   conformedValue: '$123,457',
-  adjustedCaretPosition: 7,
+  adjustedCaretPosition: 7
 
   // only: true
 }, {
@@ -68,7 +68,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 9,
 
   conformedValue: '$123,456',
-  adjustedCaretPosition: 8,
+  adjustedCaretPosition: 8
 
   // only: true
 }, {
@@ -81,7 +81,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 3,
 
   conformedValue: '$134,567',
-  adjustedCaretPosition: 2,
+  adjustedCaretPosition: 2
 
   // only: true
 }, {
@@ -93,7 +93,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: '1__',
-  adjustedCaretPosition: 1,
+  adjustedCaretPosition: 1
 
 }, {
   line: getLineNumber(),
@@ -139,7 +139,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 3,
 
   conformedValue: '(12_) ___-_3__',
-  adjustedCaretPosition: 3,
+  adjustedCaretPosition: 3
 
 }, {
   line: getLineNumber(),
@@ -150,7 +150,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 2,
 
   conformedValue: '(333) 3__-____',
-  adjustedCaretPosition: 2,
+  adjustedCaretPosition: 2
 
   // only: true
 }, {
@@ -162,7 +162,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 8,
 
   conformedValue: '(123) 94_-____',
-  adjustedCaretPosition: 8,
+  adjustedCaretPosition: 8
 
   // only: true
 }, {
@@ -174,7 +174,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 7,
 
   conformedValue: '(__4) 44_-____',
-  adjustedCaretPosition: 7,
+  adjustedCaretPosition: 7
 
 }, {
   line: getLineNumber(),
@@ -185,7 +185,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 8,
 
   conformedValue: '(__4) 444-____',
-  adjustedCaretPosition: 8,
+  adjustedCaretPosition: 8
 }, {
   line: getLineNumber(),
 
@@ -195,7 +195,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 10,
 
   conformedValue: '(__4) 444-____',
-  adjustedCaretPosition: 9,
+  adjustedCaretPosition: 9
 
   // only: true
 }, {
@@ -219,7 +219,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 8,
 
   conformedValue: '(__4) 44_-____',
-  adjustedCaretPosition: 8,
+  adjustedCaretPosition: 8
   // only: true,
 }, {
   line: getLineNumber(),
@@ -230,7 +230,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 4,
 
   conformedValue: '(505) ___-____',
-  adjustedCaretPosition: 4,
+  adjustedCaretPosition: 4
 
   // only: true
 }, {
@@ -252,7 +252,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 3,
 
   conformedValue: '(333) 333-____',
-  adjustedCaretPosition: 3,
+  adjustedCaretPosition: 3
 }, {
   line: getLineNumber(),
 
@@ -262,7 +262,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: '(5__) ___-____',
-  adjustedCaretPosition: 2,
+  adjustedCaretPosition: 2
 
   // only: true
 }, {
@@ -274,7 +274,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 2,
 
   conformedValue: '(00_) ___-____',
-  adjustedCaretPosition: 2,
+  adjustedCaretPosition: 2
 }, {
   line: getLineNumber(),
 
@@ -284,7 +284,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: '4_/__',
-  adjustedCaretPosition: 1,
+  adjustedCaretPosition: 1
 }, {
   line: getLineNumber(),
 
@@ -294,7 +294,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 6,
 
   conformedValue: '(124) _',
-  adjustedCaretPosition: 4,
+  adjustedCaretPosition: 4
 
   // only: true
 }, {
@@ -306,7 +306,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 5,
 
   conformedValue: '(449) 5',
-  adjustedCaretPosition: 7,
+  adjustedCaretPosition: 7
 
   // only: true
 }, {
@@ -318,7 +318,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 4,
 
   conformedValue: '(__4) ___-____',
-  adjustedCaretPosition: 6,
+  adjustedCaretPosition: 6
 
   // only: true
 }, {
@@ -330,9 +330,9 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 2,
 
   conformedValue: '11_',
-  adjustedCaretPosition: 2,
+  adjustedCaretPosition: 2
 
-  //only: true
+  // only: true
 }, {
   line: getLineNumber(),
 
@@ -342,7 +342,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 3,
 
   conformedValue: '111',
-  adjustedCaretPosition: 3,
+  adjustedCaretPosition: 3
 }, {
   line: getLineNumber(),
 
@@ -352,9 +352,9 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 2,
 
   conformedValue: '(3__)',
-  adjustedCaretPosition: 2,
+  adjustedCaretPosition: 2
 
-  //only: true
+  // only: true
 }, {
   line: getLineNumber(),
 
@@ -364,7 +364,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: '1__',
-  adjustedCaretPosition: 1,
+  adjustedCaretPosition: 1
 }, {
   line: getLineNumber(),
 
@@ -374,9 +374,9 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 2,
 
   conformedValue: '11_',
-  adjustedCaretPosition: 2,
+  adjustedCaretPosition: 2
 
-  //only: true
+  // only: true
 }, {
   line: getLineNumber(),
 
@@ -386,7 +386,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 3,
 
   conformedValue: '(132) _',
-  adjustedCaretPosition: 3,
+  adjustedCaretPosition: 3
 
   // only: true
 }, {
@@ -398,7 +398,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: '(5__) ___/____',
-  adjustedCaretPosition: 2,
+  adjustedCaretPosition: 2
 
   // only: true
 }, {
@@ -410,9 +410,9 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 4,
 
   conformedValue: '2938',
-  adjustedCaretPosition: 4,
+  adjustedCaretPosition: 4
 
-  //only: true
+  // only: true
 }, {
   line: getLineNumber(),
 
@@ -422,7 +422,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 2,
 
   conformedValue: '(127) _',
-  adjustedCaretPosition: 2,
+  adjustedCaretPosition: 2
 }, {
   line: getLineNumber(),
 
@@ -432,7 +432,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: '1_/__/____',
-  adjustedCaretPosition: 1,
+  adjustedCaretPosition: 1
 }, {
   line: getLineNumber(),
 
@@ -441,7 +441,7 @@ export default _.filter((t) => t, [{
   mask: [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/],
   currentCaretPosition: 2,
   conformedValue: '11/__/____',
-  adjustedCaretPosition: 3,
+  adjustedCaretPosition: 3
 }, {
   line: getLineNumber(),
 
@@ -451,7 +451,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 4,
 
   conformedValue: '11/11/____',
-  adjustedCaretPosition: 6,
+  adjustedCaretPosition: 6
 
 }, {
   line: getLineNumber(),
@@ -462,7 +462,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 8,
 
   conformedValue: '23/84/0957',
-  adjustedCaretPosition: 10,
+  adjustedCaretPosition: 10
 }, {
   line: getLineNumber(),
 
@@ -472,7 +472,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 7,
 
   conformedValue: '23/84/095_',
-  adjustedCaretPosition: 9,
+  adjustedCaretPosition: 9
 }, {
   line: getLineNumber(),
 
@@ -482,7 +482,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: '2_/__',
-  adjustedCaretPosition: 1,
+  adjustedCaretPosition: 1
 }, {
   line: getLineNumber(),
 
@@ -492,7 +492,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 3,
 
   conformedValue: '(777) ___-____',
-  adjustedCaretPosition: 6,
+  adjustedCaretPosition: 6
 
   // only: true
 }, {
@@ -504,7 +504,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 4,
 
   conformedValue: '(777) 1__-____',
-  adjustedCaretPosition: 7,
+  adjustedCaretPosition: 7
 }, {
   line: getLineNumber(),
 
@@ -514,9 +514,9 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 10,
 
   conformedValue: '1_/__/___1',
-  adjustedCaretPosition: 10,
+  adjustedCaretPosition: 10
 
-  //only: true
+  // only: true
 }, {
   line: getLineNumber(),
 
@@ -526,7 +526,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 5,
 
   conformedValue: '1_/1_/____',
-  adjustedCaretPosition: 4,
+  adjustedCaretPosition: 4
 
   // only: true
 }, {
@@ -538,7 +538,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 2,
 
   conformedValue: '(1__) ___-____',
-  adjustedCaretPosition: 1,
+  adjustedCaretPosition: 1
 
   // only: true
 }, {
@@ -550,7 +550,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 5,
 
   conformedValue: '12/32',
-  adjustedCaretPosition: 5,
+  adjustedCaretPosition: 5
 }, {
   line: getLineNumber(),
 
@@ -574,7 +574,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: '1_/__/____',
-  adjustedCaretPosition: 1,
+  adjustedCaretPosition: 1
 }, {
   line: getLineNumber(),
 
@@ -584,7 +584,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: '22/__',
-  adjustedCaretPosition: 1,
+  adjustedCaretPosition: 1
 }, {
   line: getLineNumber(),
 
@@ -594,7 +594,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: '(222) ___-____',
-  adjustedCaretPosition: 0,
+  adjustedCaretPosition: 0
 
   // only: true
 }, {
@@ -606,7 +606,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 2,
 
   conformedValue: '_2/_2',
-  adjustedCaretPosition: 3,
+  adjustedCaretPosition: 3
 }, {
   line: getLineNumber(),
 
@@ -616,7 +616,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 0,
 
   conformedValue: '_2/__',
-  adjustedCaretPosition: 0,
+  adjustedCaretPosition: 0
 
   // only: true
 }, {
@@ -644,7 +644,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: '2',
-  adjustedCaretPosition: 1,
+  adjustedCaretPosition: 1
 }, {
   line: getLineNumber(),
 
@@ -668,7 +668,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: '2_/_2',
-  adjustedCaretPosition: 1,
+  adjustedCaretPosition: 1
 }, {
   line: getLineNumber(),
 
@@ -678,7 +678,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 2,
 
   conformedValue: '22/__',
-  adjustedCaretPosition: 3,
+  adjustedCaretPosition: 3
 }, {
   line: getLineNumber(),
 
@@ -688,7 +688,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 3,
 
   conformedValue: '22/2_',
-  adjustedCaretPosition: 4,
+  adjustedCaretPosition: 4
 }, {
   line: getLineNumber(),
 
@@ -698,7 +698,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 6,
 
   conformedValue: '77/77',
-  adjustedCaretPosition: 5,
+  adjustedCaretPosition: 5
 
   // only: true
 }, {
@@ -710,7 +710,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 5,
 
   conformedValue: '22/21',
-  adjustedCaretPosition: 5,
+  adjustedCaretPosition: 5
 }, {
   line: getLineNumber(),
 
@@ -720,7 +720,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 3,
 
   conformedValue: '__/5_',
-  adjustedCaretPosition: 4,
+  adjustedCaretPosition: 4
 
   // only: true
 }, {
@@ -746,7 +746,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 17,
 
   conformedValue: '82/93/8474',
-  adjustedCaretPosition: 10,
+  adjustedCaretPosition: 10
 }, {
   line: getLineNumber(),
 
@@ -756,7 +756,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 4,
 
   conformedValue: '02/2_',
-  adjustedCaretPosition: 4,
+  adjustedCaretPosition: 4
 }, {
   line: getLineNumber(),
 
@@ -766,7 +766,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 3,
 
   conformedValue: '22/__',
-  adjustedCaretPosition: 3,
+  adjustedCaretPosition: 3
 }, {
   line: getLineNumber(),
 
@@ -776,7 +776,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 8,
 
   conformedValue: '22/39/95__',
-  adjustedCaretPosition: 8,
+  adjustedCaretPosition: 8
 
   // only: true
 }, {
@@ -788,7 +788,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 2,
 
   conformedValue: '2_',
-  adjustedCaretPosition: 1,
+  adjustedCaretPosition: 1
 
   // only: true
 }, {
@@ -800,7 +800,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 7,
 
   conformedValue: '(123) 3',
-  adjustedCaretPosition: 7,
+  adjustedCaretPosition: 7
 
   // only: true
 }, {
@@ -812,7 +812,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 7,
 
   conformedValue: '___ ___',
-  adjustedCaretPosition: 0,
+  adjustedCaretPosition: 0
 
   // only: true
 }, {
@@ -824,7 +824,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: 'M__ ___',
-  adjustedCaretPosition: 1,
+  adjustedCaretPosition: 1
 }, {
   line: getLineNumber(),
 
@@ -834,7 +834,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 2,
 
   conformedValue: 'M2_ ___',
-  adjustedCaretPosition: 2,
+  adjustedCaretPosition: 2
 }, {
   line: getLineNumber(),
 
@@ -844,7 +844,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 3,
 
   conformedValue: 'M2j ___',
-  adjustedCaretPosition: 4,
+  adjustedCaretPosition: 4
 }, {
   line: getLineNumber(),
 
@@ -854,7 +854,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 7,
 
   conformedValue: 'M2j ___',
-  adjustedCaretPosition: 6,
+  adjustedCaretPosition: 6
 
   // only: true
 }, {
@@ -866,7 +866,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 7,
 
   conformedValue: 'M2j __R',
-  adjustedCaretPosition: 7,
+  adjustedCaretPosition: 7
 }, {
   line: getLineNumber(),
 
@@ -876,7 +876,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 3,
 
   conformedValue: 'M2j ___',
-  adjustedCaretPosition: 4,
+  adjustedCaretPosition: 4
 }, {
   line: getLineNumber(),
 
@@ -886,7 +886,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 2,
 
   conformedValue: '(21_)',
-  adjustedCaretPosition: 2,
+  adjustedCaretPosition: 2
 
   // only: true
 }, {
@@ -898,7 +898,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 4,
 
   conformedValue: '(324) 3__',
-  adjustedCaretPosition: 6,
+  adjustedCaretPosition: 6
 
   // only: true
 }, {
@@ -910,7 +910,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 2,
 
   conformedValue: '(21_)',
-  adjustedCaretPosition: 2,
+  adjustedCaretPosition: 2
 
   // only: true
 }, {
@@ -922,7 +922,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: '(1__)',
-  adjustedCaretPosition: 2,
+  adjustedCaretPosition: 2
 
   // only: true
 }, {
@@ -956,7 +956,7 @@ export default _.filter((t) => t, [{
   currentCaretPosition: 6,
 
   conformedValue: '(395) 34_-____',
-  adjustedCaretPosition: 4,
+  adjustedCaretPosition: 4
 
   // only: true
 }, {
@@ -1031,10 +1031,10 @@ export default _.filter((t) => t, [{
   // only: true
 }])
 
-//####################################################################################
-//####################################################################################
-//####################################################################################
-//####################################################################################
+// ####################################################################################
+// ####################################################################################
+// ####################################################################################
+// ####################################################################################
 
 // export const noGuideMode = _.filter((t) => false, [{
 export const noGuideMode = _.filter((t) => t, [{
@@ -1197,10 +1197,10 @@ export const noGuideMode = _.filter((t) => t, [{
   // only: true
 }])
 
-//####################################################################################
-//####################################################################################
-//####################################################################################
-//####################################################################################
+// ####################################################################################
+// ####################################################################################
+// ####################################################################################
+// ####################################################################################
 
 // export const acceptedCharInMask = _.filter((t) => false, [{
 export const acceptedCharInMask = _.filter((t) => t, [{
@@ -1313,7 +1313,7 @@ export const acceptedCharInMask = _.filter((t) => t, [{
   currentCaretPosition: 4,
 
   conformedValue: '00 (00_) 00 83 ___ 93 ___',
-  adjustedCaretPosition: 6,
+  adjustedCaretPosition: 6
 
   // only: true,
 }, {
@@ -1349,7 +1349,7 @@ export const acceptedCharInMask = _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: '+1 (1__) ___-____',
-  adjustedCaretPosition: 5,
+  adjustedCaretPosition: 5
 
   // only: true
 }, {
@@ -1361,7 +1361,7 @@ export const acceptedCharInMask = _.filter((t) => t, [{
   currentCaretPosition: 5,
 
   conformedValue: '+1 (1__) ___-____',
-  adjustedCaretPosition: 5,
+  adjustedCaretPosition: 5
 
   // only: true
 }, {
@@ -1373,7 +1373,7 @@ export const acceptedCharInMask = _.filter((t) => t, [{
   currentCaretPosition: 1,
 
   conformedValue: '+1 (12_) ___-____',
-  adjustedCaretPosition: 5,
+  adjustedCaretPosition: 5
 
   // only: true
 }, {
@@ -1385,7 +1385,7 @@ export const acceptedCharInMask = _.filter((t) => t, [{
   currentCaretPosition: 2,
 
   conformedValue: '+1 (12_) ___-____',
-  adjustedCaretPosition: 4,
+  adjustedCaretPosition: 4
 
   // only: true
 }, {
@@ -1398,15 +1398,15 @@ export const acceptedCharInMask = _.filter((t) => t, [{
   currentCaretPosition: 0,
 
   conformedValue: '+1 (1__) ___-____',
-  adjustedCaretPosition: 0,
+  adjustedCaretPosition: 0
 
   // only: true
 }])
 
-//####################################################################################
-//####################################################################################
-//####################################################################################
-//####################################################################################
+// ####################################################################################
+// ####################################################################################
+// ####################################################################################
+// ####################################################################################
 
 // export const escapedMaskChar = _.filter((t) => false, [{
 export const escapedMaskChar = _.filter((t) => t, [{
@@ -1424,15 +1424,15 @@ export const escapedMaskChar = _.filter((t) => t, [{
   currentCaretPosition: 4,
 
   conformedValue: '+1 (___) ___-____',
-  adjustedCaretPosition: 4,
+  adjustedCaretPosition: 4
 
   // only: true
 }])
 
-//####################################################################################
-//####################################################################################
-//####################################################################################
-//####################################################################################
+// ####################################################################################
+// ####################################################################################
+// ####################################################################################
+// ####################################################################################
 
 export const caretTrapTests = _.filter((t) => t, [{
 // export const escapedMaskChar = _.filter((t) => false, [{
@@ -1459,6 +1459,8 @@ export function transformTestForComponent(test) {
     conformedValue: (
       conformedValue === convertMaskToPlaceholder(mask) &&
       adjustedCaretPosition === 0
-    ) ? '' : conformedValue
+    ) ?
+      '' :
+      conformedValue
   }
 }

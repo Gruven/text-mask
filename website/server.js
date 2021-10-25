@@ -1,17 +1,23 @@
 /* eslint-disable no-console */
+const path = require('path')
+const webpack = require('webpack')
+const WebpackDevServer = require('webpack-dev-server')
+const config = require('./webpack.runWebsiteWithHotReloading.js')
 
-var webpack = require('webpack')
-var WebpackDevServer = require('webpack-dev-server')
-var config = require('./webpack.runWebsiteWithHotReloading.js')
-
-new WebpackDevServer(webpack(config), {
-  publicPath: config.output.publicPath,
-  hot: true,
+new WebpackDevServer({
+  hot: 'only',
   historyApiFallback: true,
-  stats: {
-    colors: true
+  devMiddleware: {
+    publicPath: config.output.publicPath,
+    stats: {
+      colors: true
+    }
+  },
+  static: {
+    directory: path.resolve(__dirname, '..'),
+    publicPath: '/'
   }
-}).listen(3000, 'localhost', function(err) {
+}, webpack(config)).listen(3000, 'localhost', function(err) {
   if (err) {
     console.log(err)
   }
