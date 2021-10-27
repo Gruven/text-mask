@@ -20,8 +20,10 @@ module.exports = {
   output: {
     path: path.join(__dirname, './dist'),
     filename: 'textMaskCore.js',
-    library: 'textMaskCore',
-    libraryTarget: 'umd'
+    library: {
+      name: 'textMaskCore',
+      type: 'umd'
+    }
   },
 
   resolve: {

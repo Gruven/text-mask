@@ -44,7 +44,7 @@ side. See [here](https://github.com/Gruven/text-mask/issues/109) for details.
 
 To see an example of the code running, follow these steps:
 
-* Clone the repo, `git clone git@github.com:text-mask/text-mask.git`
+* Clone the repo, `git clone git@github.com:Gruven/text-mask.git`
 * `cd text-mask/ember`
 * `npm install`
 * `bower install`

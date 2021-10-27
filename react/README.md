@@ -49,7 +49,7 @@ the [documentation here](https://github.com/Gruven/text-mask/blob/master/compone
 
 To see an example of the code running, follow these steps:
 
-1. Clone the repo, `git clone git@github.com:text-mask/text-mask.git`
+1. Clone the repo, `git clone git@github.com:Gruven/text-mask.git`
 1. `cd text-mask`
 1. `npm install`
 1. `npm run react:dev`

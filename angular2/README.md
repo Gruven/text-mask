@@ -62,7 +62,7 @@ information, see [this page](https://github.com/Gruven/text-mask/issues/236).
 
 To see an example of the code running, follow these steps:
 
-1. Clone the repo, `git clone git@github.com:text-mask/text-mask.git`
+1. Clone the repo, `git clone git@github.com:Gruven/text-mask.git`
 1. `cd text-mask`
 1. `cd angular2`
 1. `npm install`

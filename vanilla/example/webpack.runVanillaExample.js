@@ -1,6 +1,6 @@
 const path = require('path')
-const webpack = require('webpack')
-const coreLoaders = require('../../core/webpack.buildCore.js').module.loaders
+require('webpack')
+const coreLoaders = require('../../core/webpack.buildCore.js').module.rules
 
 module.exports = {
   devtool: 'eval',
@@ -10,12 +10,14 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/'
   },
-  plugins: [new webpack.NoErrorsPlugin()],
   resolve: {extensions: ['', '.js']},
   module: {
-    loaders: [{
+    rules: [{
       test: /\.js?$/,
-      loaders: ['babel-loader'],
+      loader: 'babel-loader',
+      options: {
+        rootMode: 'upward'
+      },
       include: [
         __dirname,
         path.join(__dirname, '../src'),

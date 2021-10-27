@@ -19,8 +19,10 @@ module.exports = {
   output: {
     path: path.join(__dirname, './dist'),
     filename: 'vanillaTextMask.js',
-    library: 'vanillaTextMask',
-    libraryTarget: 'umd'
+    library: {
+      name: 'vanillaTextMask',
+      type: 'umd'
+    }
   },
 
   resolve: {

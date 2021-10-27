@@ -1,6 +1,6 @@
 # [![Text Mask](assets/logo.png)](https://github.com/Gruven/text-mask/#readme)
 
-[![Build Status](https://travis-ci.org/text-mask/text-mask.svg?branch=master)](https://travis-ci.org/text-mask/text-mask)
+[![Build Status](https://app.travis-ci.com/Gruven/text-mask.svg?branch=master)](https://app.travis-ci.com/Gruven/text-mask)
 
 Text Mask is an input mask library. It can create input masks for phone, date, currency, zip code, percentage, email,
 and literally anything!
@@ -9,7 +9,7 @@ There are convenient wrappers for React, Angular 2, Ember, and Vue.
 
 ## Live demo
 
-See it in action, [check out the demo page](https://text-mask.github.io/text-mask/).
+See it in action, [check out the demo page](https://gruven.github.io/text-mask/).
 
 ## Installation and usage
 
