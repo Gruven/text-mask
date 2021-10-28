@@ -1,4 +1,4 @@
-// Type definitions for react-text-mask 5.5
+// Type definitions for react-text-mask-legacy 5.5
 // Project: https://github.com/Gruven/text-mask/tree/master/react
 // Definitions by: Guilherme Hübner <https://github.com/guilhermehubner>
 //                 Deividi Cavarzan <https://github.com/cavarzan>
@@ -9,22 +9,30 @@
 
 import * as React from 'react';
 
-export type Mask = Array<string | RegExp> | false;
-
 export interface PipeConfig {
-    placeholder: string;
-    placeholderChar: string;
-    currentCaretPosition: number;
-    keepCharPositions: boolean;
-    rawValue: string;
-    guide: boolean | undefined;
-    previousConformedValue: string | undefined;
+  placeholder: string;
+  placeholderChar: string;
+  currentCaretPosition: number;
+  keepCharPositions: boolean;
+  rawValue: string;
+  guide: boolean | undefined;
+  previousConformedValue: string | undefined;
 }
+
+export type MaskArray = Array<string | RegExp>;
+export type Mask = MaskArray | ((value: string) => MaskArray | false) | false;
+export type Pipe = (
+  conformedValue: string,
+  config: PipeConfig,
+) => false | string | { value: string; indexesOfPipedChars: number[] };
 
 export type ConformToMaskConfig = Partial<Omit<PipeConfig, 'rawValue'>>;
 
 export interface MaskedInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-    mask: Mask | ((value: string) => Mask);
+    mask: Mask | {
+      mask: Mask,
+      pipe: Pipe,
+    };
 
     guide?: boolean;
 
@@ -32,10 +40,7 @@ export interface MaskedInputProps extends React.InputHTMLAttributes<HTMLInputEle
 
     keepCharPositions?: boolean;
 
-    pipe?: (
-        conformedValue: string,
-        config: PipeConfig,
-    ) => false | string | { value: string; indexesOfPipedChars: number[] };
+    pipe?: Pipe;
 
     showMask?: boolean;
 
@@ -62,6 +67,6 @@ export default class MaskedInput extends React.Component<MaskedInputProps, any> 
 
 export function conformToMask(
     text: string,
-    mask: Mask | ((value: string) => Mask),
+    mask: Mask,
     config?: ConformToMaskConfig,
 ): ConformToMaskResult;
